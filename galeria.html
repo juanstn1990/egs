@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galería de proyectos - El Gran Shadday">
+    <title>Galería | El Gran Shadday</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="logo.png" alt="El Gran Shadday Logo">
+                    <span class="logo-text">El Gran Shadday</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="galeria.html" class="nav-link active">Galería</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header de Página -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Galería de Proyectos</h1>
+            <p>Nuestro trabajo habla por sí solo</p>
+        </div>
+    </section>
+
+    <!-- Galería Section -->
+    <section class="galeria-page">
+        <div class="container">
+            <!-- Introducción -->
+            <div class="galeria-intro">
+                <p class="galeria-description">
+                    Esta galería presenta algunos de los proyectos desarrollados por El Gran Shaday, donde se refleja
+                    la experiencia, el compromiso y la calidad en cada instalación. Cada imagen corresponde a soluciones
+                    de seguridad implementadas con altos estándares técnicos y atención al detalle.
+                </p>
+            </div>
+
+            <!-- Filtros -->
+            <div class="galeria-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="images">Imágenes</button>
+                <button class="filter-btn" data-filter="videos">Videos</button>
+            </div>
+
+            <!-- Grid de Galería -->
+            <div class="galeria-grid">
+                <!-- Imagen 1 -->
+                <div class="galeria-item" data-category="images">
+                    <div class="galeria-item-wrapper">
+                        <img src="media/images/galeria/image.png" alt="Proyecto de seguridad 1">
+                        <div class="galeria-overlay">
+                            <div class="galeria-content">
+                                <h3>Proyecto de Seguridad</h3>
+                                <p>Sistema integral instalado</p>
+                                <button class="btn-view" onclick="openLightbox(0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 2 -->
+                <div class="galeria-item" data-category="images">
+                    <div class="galeria-item-wrapper">
+                        <img src="media/images/galeria/image copy.png" alt="Proyecto de seguridad 2">
+                        <div class="galeria-overlay">
+                            <div class="galeria-content">
+                                <h3>Instalación CCTV</h3>
+                                <p>Cámaras de alta definición</p>
+                                <button class="btn-view" onclick="openLightbox(1)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 3 -->
+                <div class="galeria-item" data-category="images">
+                    <div class="galeria-item-wrapper">
+                        <img src="media/images/galeria/image copy 2.png" alt="Proyecto de seguridad 3">
+                        <div class="galeria-overlay">
+                            <div class="galeria-content">
+                                <h3>Control de Acceso</h3>
+                                <p>Sistema biométrico</p>
+                                <button class="btn-view" onclick="openLightbox(2)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 4 -->
+                <div class="galeria-item" data-category="images">
+                    <div class="galeria-item-wrapper">
+                        <img src="media/images/galeria/image copy 3.png" alt="Proyecto de seguridad 4">
+                        <div class="galeria-overlay">
+                            <div class="galeria-content">
+                                <h3>Alarma Perimetral</h3>
+                                <p>Detección 24/7</p>
+                                <button class="btn-view" onclick="openLightbox(3)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 5 -->
+                <div class="galeria-item" data-category="images">
+                    <div class="galeria-item-wrapper">
+                        <img src="media/images/galeria/image copy 4.png" alt="Proyecto de seguridad 5">
+                        <div class="galeria-overlay">
+                            <div class="galeria-content">
+                                <h3>Seguridad Integral</h3>
+                                <p>Monitoreo remoto</p>
+                                <button class="btn-view" onclick="openLightbox(4)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 6 -->
+                <div class="galeria-item" data-category="images">
+                    <div class="galeria-item-wrapper">
+                        <img src="media/images/galeria/image copy 5.png" alt="Proyecto de seguridad 6">
+                        <div class="galeria-overlay">
+                            <div class="galeria-content">
+                                <h3>Sistema de Vigilancia</h3>
+                                <p>Cobertura total</p>
+                                <button class="btn-view" onclick="openLightbox(5)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 7 -->
+                <div class="galeria-item" data-category="images">
+                    <div class="galeria-item-wrapper">
+                        <img src="media/images/galeria/image copy 6.png" alt="Proyecto de seguridad 7">
+                        <div class="galeria-overlay">
+                            <div class="galeria-content">
+                                <h3>Instalación Profesional</h3>
+                                <p>Equipos de última generación</p>
+                                <button class="btn-view" onclick="openLightbox(6)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                    Ver más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+        </button>
+        <button class="lightbox-nav lightbox-prev" onclick="changeLightboxImage(-1)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"/>
+            </svg>
+        </button>
+        <button class="lightbox-nav lightbox-next" onclick="changeLightboxImage(1)">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"/>
+            </svg>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Imagen ampliada">
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Quieres un proyecto como estos?</h2>
+                <p>Contáctanos y haremos realidad tu sistema de seguridad ideal</p>
+                <a href="contacto.html" class="btn btn-white">Contactar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="El Gran Shadday">
+                    <p>Seguridad y confianza para proteger lo que más importa</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><a href="tel:+573133220467">+57 313 322 0467</a></p>
+                    <p><a href="mailto:shaddayseguridad@gmail.com">shaddayseguridad@gmail.com</a></p>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/sheddayseguridad" target="_blank" aria-label="Instagram Empresa">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/shadday_seguridad" target="_blank" aria-label="Instagram Personal">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 El Gran Shadday. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/573133220467?text=Hola,%20me%20gustaría%20recibir%20más%20información%20sobre%20sus%20servicios%20de%20seguridad"
+       class="whatsapp-float"
+       target="_blank"
+       aria-label="Contactar por WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-tooltip">¿Necesitas ayuda?</span>
+    </a>
+
+    <script src="script.js"></script>
+    <script src="galeria.js"></script>
+</body>
+</html>
